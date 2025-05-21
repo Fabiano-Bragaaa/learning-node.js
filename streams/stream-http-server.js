@@ -12,9 +12,6 @@ class InverseNumberStream extends Transform {
   }
 }
 
-//req => readableStream
-//res => writableStream
-
 const server = http.createServer(async (req, res) => {
   const buffers = [];
 
