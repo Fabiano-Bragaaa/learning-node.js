@@ -14,6 +14,8 @@ const server = http.createServer(async (request, response) => {
   if (route) {
     const routesParams = request.url.match(route.path);
 
+    request.params = { ...routesParams.groups };
+
     console.log(routesParams);
 
     return route.handler(request, response);
