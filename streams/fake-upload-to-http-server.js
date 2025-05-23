@@ -26,6 +26,4 @@ await fetch("http://localhost:3334", {
   .then((response) => {
     return response.text();
   })
-  .then((data) => {
-    console.log(data);
-  });
+  .then((data) => {});
